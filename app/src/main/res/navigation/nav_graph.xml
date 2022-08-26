@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="tarc.edu.blooddonation.Home"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_requestFragment"
+            app:destination="@id/requestFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_donorFragment"
+            app:destination="@id/donorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/requestFragment"
+        android:name="tarc.edu.blooddonation.Request"
+        android:label="Request"
+        tools:layout="@layout/fragment_request" >
+        <action
+            android:id="@+id/action_requestFragment_to_addRequestFragment"
+            app:destination="@id/addRequestFragment" />
+        <action
+            android:id="@+id/action_requestFragment_to_deleteRequestFragment"
+            app:destination="@id/deleteRequestFragment" />
+        <action
+            android:id="@+id/action_requestFragment_to_searchToViewRequestFragment"
+            app:destination="@id/searchToViewRequestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/donorFragment"
+        android:name="tarc.edu.blooddonation.Donor"
+        android:label="Donor"
+        tools:layout="@layout/fragment_donor" >
+        <action
+            android:id="@+id/action_donorFragment_to_addDonorFragment"
+            app:destination="@id/addDonorFragment" />
+        <action
+            android:id="@+id/action_donorFragment_to_deleteDonorFragment"
+            app:destination="@id/deleteDonorFragment" />
+        <action
+            android:id="@+id/action_donorFragment_to_updateDonorFragment"
+            app:destination="@id/updateDonorFragment" />
+        <action
+            android:id="@+id/action_donorFragment_to_searchToViewDonorFragment"
+            app:destination="@id/searchToViewDonorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRequestFragment"
+        android:name="tarc.edu.blooddonation.AddRequest"
+        android:label="fragment_add_request"
+        tools:layout="@layout/fragment_add_request" >
+        <action
+            android:id="@+id/action_addRequestFragment_to_requestFragment"
+            app:destination="@id/requestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteRequestFragment"
+        android:name="tarc.edu.blooddonation.DeleteRequest"
+        android:label="fragment_delete_request"
+        tools:layout="@layout/fragment_delete_request" >
+        <action
+            android:id="@+id/action_deleteRequestFragment_to_requestFragment"
+            app:destination="@id/requestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchToViewRequestFragment"
+        android:name="tarc.edu.blooddonation.SearchAndViewRequest"
+        android:label="fragment_search_to_view_request"
+        tools:layout="@layout/fragment_search_to_view_request">
+        <action
+            android:id="@+id/action_searchToViewRequestFragment_to_requestFragment"
+            app:destination="@id/requestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDonorFragment"
+        android:name="tarc.edu.blooddonation.AddDonor"
+        android:label="fragment_add_donor"
+        tools:layout="@layout/fragment_add_donor" >
+        <action
+            android:id="@+id/action_addDonorFragment_to_donorFragment"
+            app:destination="@id/donorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteDonorFragment"
+        android:name="tarc.edu.blooddonation.DeleteDonor"
+        android:label="fragment_delete_donor"
+        tools:layout="@layout/fragment_delete_donor" >
+        <action
+            android:id="@+id/action_deleteDonorFragment_to_donorFragment"
+            app:destination="@id/donorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateDonorFragment"
+        android:name="tarc.edu.blooddonation.UpdateDonor"
+        android:label="fragment_update_donor"
+        tools:layout="@layout/fragment_update_donor" >
+        <action
+            android:id="@+id/action_updateDonorFragment_to_donorFragment"
+            app:destination="@id/donorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchToViewDonorFragment"
+        android:name="tarc.edu.blooddonation.SearchAndViewDonor"
+        android:label="fragment_search_to_view_donor"
+        tools:layout="@layout/fragment_search_to_view_donor">
+        <action
+            android:id="@+id/action_searchToViewDonorFragment_to_donorFragment"
+            app:destination="@id/donorFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">BloodDonation</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="save">Save</string>
+    <string name="add">Add</string>
+    <string name="about"> We organize this Persona Blood Donation hospital is to help the patients who need of surgery,
+                          cancer treatment and transfusions for blood loss from traumatic injuries. The main purpose
+                          is to ensure healthy lives and promote well-being for all at all ages. Currently, we have
+                          created this mobile app for the blood donor to donate their blood. Blood donor can easily
+                          make their appointment through this app. Blood donor will also receive many blood donation
+                          appointment from this app. It will only shown the blood type request that is suitable for
+                          the blood donor.  </string>
+    <string name="RequestShowAll">Show All</string>
+    <string name="DonorShowAll">Show All</string>
+    <string name="addRequest">Add</string>
+    <string name="deleteRequest">Delete</string>
+    <string name="searchAndViewRequest">Search to view</string>
+    <string name="addDonor">Add</string>
+    <string name="updateDonor">Update</string>
+    <string name="deleteDonor">Delete</string>
+    <string name="searchAndViewDonor">Search to view</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
